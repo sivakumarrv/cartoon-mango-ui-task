@@ -1,0 +1,369 @@
+/* Common Color */
+
+$black: #000000;
+$white: #ffffff;
+$smokewhite: #eeeeee;
+$red: #FF0000;
+$light-red:#E63434;
+$yellow: #FFFF00;
+$dark-yellow: #FBD215;
+$blue: #0259C9;
+$sky-blue: #76D7FF;
+
+/* @Font Face */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:100,300,400,500,700,800&display=swap');
+
+/* Common Styling */
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    color: $white;
+}
+
+.has-text-weight-thin {
+    font-weight: 100 !important;
+}
+
+.has-text-weight-light {
+    font-weight: 300 !important;
+}
+
+.has-text-weight-normal {
+    font-weight: 400 !important;
+}
+
+.has-text-weight-medium {
+    font-weight: 500 !important;
+}
+
+.has-text-weight-extrabold {
+    font-weight: 800 !important;
+}
+
+%mt-1rem {
+    margin-top: 1rem !important;
+}
+
+%mb-1rem {
+    margin-bottom: 1rem !important;
+}
+
+%mtb-1rem {
+    margin: 1rem auto !important;
+}
+
+%mt-2rem {
+    margin-top: 2rem !important;
+}
+
+%mb-2rem {
+    margin-bottom: 2rem !important;
+}
+
+%ml-2rem {
+    margin-left: 2rem !important;
+}
+
+%mt-3rem {
+    margin-top: 3rem !important;
+}
+
+%mt-4rem {
+    margin-top: 4rem !important;
+}
+
+%mb-4rem {
+    margin-bottom: 4rem !important;
+}
+
+.mt-1rem {
+    @extend %mt-1rem;
+}
+
+.mt-2rem {
+    @extend %mt-2rem;
+}
+
+.mt-3rem {
+    @extend %mt-3rem;
+}
+
+.mt-4rem {
+    @extend %mt-4rem;
+}
+
+.mb-1rem {
+    @extend %mb-1rem;
+}
+
+.mb-2rem {
+    @extend %mb-2rem;
+}
+
+.mb-4rem {
+    @extend %mb-4rem;
+}
+
+.ml-2rem {
+    @extend %ml-2rem;
+}
+
+.mtb-1rem {
+    @extend %mtb-1rem;
+}
+
+%padding-0rem {
+    padding: 0rem;
+}
+
+%padding-1rem {
+    padding: 1rem;
+}
+
+%padding-b-2rem {
+    padding-bottom: 2rem;
+}
+
+%padding-b-5rem {
+    padding: 5rem 0rem;
+}
+
+%padding-rl-halfrem {
+    padding: 0rem 0.5rem;
+}
+
+%padding-rl-5rem {
+    padding: 0rem 5rem;
+}
+
+%padding-r-12rem {
+    padding-right: 12rem;
+}
+
+%padding-tb-5rem {
+    padding: 5rem 0rem;
+}
+
+.padding-0rem {
+    @extend %padding-0rem;
+}
+
+.padding-1rem {
+    @extend %padding-1rem;
+}
+
+.padding-b-2rem {
+    @extend %padding-b-2rem;
+}
+
+.padding-tb-5rem {
+    @extend %padding-tb-5rem;
+}
+
+.padding-rl-halfrem {
+    @extend %padding-rl-halfrem;
+}
+
+.padding-rl-5rem {
+    @extend %padding-rl-5rem;
+}
+
+.padding-r-12rem {
+    @extend %padding-r-12rem;
+}
+
+.lh-0rem {
+    line-height: 0rem;
+}
+
+.lh-1rem {
+    line-height: 1rem;
+}
+
+.lh-1-7rem {
+    line-height: 1.7rem;
+}
+
+.lh-2rem {
+    line-height: 2rem;
+}
+
+.lh-2-5rem {
+    line-height: 2.5rem;
+}
+
+%is-underline {
+    text-decoration: underline;
+}
+
+.is-underline {
+    @extend %is-underline;
+}
+
+
+/* Text Styling */
+
+.has-text-red {
+    color: $red;
+}
+
+.has-text-light-red {
+    color: $light-red;
+}
+
+.has-text-yellow {
+    color: $yellow;
+}
+
+.has-text-dark-yellow {
+    color: $dark-yellow;
+}
+
+.has-text-blue {
+    color: $blue;
+}
+
+.has-text-sky-blue {
+    color: $sky-blue;
+}
+
+
+/* BG Styling */
+
+.has-background-black-opacity-1 {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.has-background-black {
+    background-color: $black !important;
+}
+
+.has-background-red {
+    background-color: $red;
+}
+
+.has-background-light-red {
+    background-color: $light-red;
+}
+
+.has-background-yellow {
+    background-color: $yellow;
+}
+
+.has-background-dark-yellow {
+    background-color: $dark-yellow;
+}
+
+.has-background-blue {
+    background-color: $blue;
+}
+
+.has-background-sky-blue {
+    background-color: $sky-blue;
+}
+
+.navbar-item img {
+    max-height: 6.5rem !important;
+}
+
+.navbar-link:hover,
+a.navbar-item:hover {
+    background-color: transparent !important;
+    color: $white !important;
+    @extend %is-underline;
+}
+
+.vertical-text p {
+    position: relative;
+    top: 20rem;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.btn-book-now {
+    padding: 0.5rem 2.5rem
+}
+
+.border-left {
+    border-left: 1px solid $black;
+}
+
+.border-right {
+    border-right: 1px solid $white;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $smokewhite;
+}
+
+.social-links {
+    padding: 1.5rem 1rem;
+    a {
+        padding: 2rem 1.5rem;
+    }
+}
+
+.about-workshop:first-child:first-letter {
+    float: left;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 40px;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.btn-see-agenda {
+    padding: 0.2rem 0.5rem;
+}
+
+.section-heading {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 1px;
+        bottom: 0;
+        left: 0%;
+        border-bottom: 1px solid $white;
+    }
+}
+
+.speaker-img-wrapper {
+    max-width: 60%;
+    position: relative;
+    cursor: pointer;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        color: #FFF;
+    }
+    &:hover .overlay {
+        display: block;
+        background: rgba(255, 0, 0, 0.6);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: $light-red;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
+        padding: .5rem 0;
+    }
+}
